@@ -64,10 +64,10 @@ Este processo refere-se a ação do programa, onde foram os seguintes passos:
 No @Before foram feitas as validações do teste.
 <ol>
 <li><b> Validação do teste em encontrar a frase "E-mail ou senha inválidos."</b></li>
-   @After
-    public void validation(){
-        // Validação
-        String validador = navegador.findElement(By.xpath("//*[@class='top-messages']")).getText();
+   <br>@After</br>
+    <br>public void validation(){</br>
+        <br>// Validação</br>
+        <br>String validador = navegador.findElement(By.xpath("//*[@class='top-messages']")).getText();</br>
         assertEquals("E-mail ou senha inválidos.",validador);
     }
 
