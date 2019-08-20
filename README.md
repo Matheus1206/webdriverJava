@@ -19,13 +19,13 @@ O objetivo desse projeto é realizar a automação de teste login na aplicação
 <h2>Passo a passo</h2>
 <h3>Explicação do @Before</h3>
 <ol>
-Neste processo de @Before foram feitos os sguintes passos:
+Neste processo de @Before foram feitos os seguintes passos:
 <li><b> Setendo a propriedade de sistema onde encontra-se o webdriver para a abertura do Chrome</b></li>
  private WebDriver navegador;
-    @Before
-    public void setup() {
-        // Abrindo o Chrome
-            System.setProperty("webdriver.chrome.driver","C:\\Users\\matheus.oliveira\\Desktop\\Drivers\\chromedriver.exe");
+    <br>@Before<br>
+    <br>public void setup() {</br>
+        <br>// Abrindo o Chrome</br>
+            <br>System.setProperty("webdriver.chrome.driver","C:\\Users\\matheus.oliveira\\Desktop\\Drivers\\chromedriver.exe");</br>
 <li><b> Criação da referência "navegador" do tipo WebDriver</b></li> 
     navegador = new ChromeDriver();
 <li><b> Maximização da janela para melhor visualização do teste</b></li>
