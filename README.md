@@ -4,8 +4,14 @@
 Neste projeto foram utilizados:
 <ol>
 <li><b> Selenium;</b></li>
-<li><b>- JUnit.</b></li>
+<li><b> JUnit.</b></li>
 <ol>
+ 
+<h2>Ambiente</h2>
+<ol>
+<b>IDE:</b> Intellij
+<b>Java:</b> "1.8.0_221"
+<b>Webdriver:</b> chromedriver  
 
 <h2>Resumo</h2>
 O objetivo desse projeto é realizar a automação de teste login na aplicação do truckpad.
@@ -32,5 +38,23 @@ Neste processo de @Before foram feitos os sguintes passos:
             navegador.get("https://tms.truckpad.com.br/entrar");
 
 }
+
+<b>Explicação do @Test</b>
+Este processo refere-se a ação do programa, onde foram os seguintes passos:
+<li> <b>Foi digitado o email: "desenvolvedor@truckpad.com.br"</b></li> 
+ @Test
+    public void testLoginInválido(){
+        // Inserindo o email
+        navegador.findElement(By.id("user_email")).sendKeys("desenvolvedor@truckpad.com.br");
+
+<li><b> Foi digitada a senha: "truckpad@caseQA2019"</b></li>
+// Inserindo a senha errada
+        navegador.findElement(By.id("user_password")).sendKeys("truckpad@caseQA2019");
+<li><b> Clique no botão "Entrar"</b></li>
+        // Clicar no botão "Entrar"
+        navegador.findElement(By.name("commit")).click();
+    }
+
+
 
 
