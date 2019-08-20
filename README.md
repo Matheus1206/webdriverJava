@@ -47,9 +47,9 @@ Neste processo de @Before foram feitos os seguintes passos:
 <h3>Explicação do @Test</h3>
 Este processo refere-se a ação do programa, onde foram os seguintes passos:
 <li> <b>Foi digitado o email: "desenvolvedor@truckpad.com.br"</b></li> 
- @Test
-    public void testLoginInválido(){
-        // Inserindo o email
+<br> @Test</br>
+    <br>public void testLoginInválido(){</br>
+        <br>// Inserindo o email</br>
         navegador.findElement(By.id("user_email")).sendKeys("desenvolvedor@truckpad.com.br");
 
 <li><b> Foi digitada a senha: "truckpad@caseQA2019"</b></li>
